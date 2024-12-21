@@ -1,0 +1,142 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.card {
+  background: #191c29;
+  width: 50vw;
+  height: 60vh;
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+
+.card:hover img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card::before {
+  content: "";
+  width: 102%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #a5d7e8,
+    #576cbc 43%,
+    #19376d
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -1%;
+  animation: spin 3.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(75vh / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(75vh / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    #a5d7e8,
+    #576cbc 43%,
+    #19376d
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 3.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .card {
+    width: 60vw; /* Adjust width for tablets */
+    height: 50vh; /* Adjust height for tablets */
+    font-size: 1.2em; /* Adjust font size for tablets */
+  }
+
+  .card::after {
+    top: calc(60vh / 6); /* Adjust positioning for smaller height */
+    filter: blur(calc(60vh / 6));
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 70vw; /* Adjust width for smaller screens */
+    height: 45vh; /* Adjust height for smaller screens */
+    font-size: 1em; /* Adjust font size for smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .card::before,
+  .card::after {
+    width: 105%; /* Slightly increase width for smaller screens */
+    height: 105%; /* Slightly increase height for smaller screens */
+  }
+
+  .card::after {
+    top: calc(50vh / 6); /* Adjust top positioning for smaller screens */
+    filter: blur(calc(50vh / 6));
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 80vw; /* Adjust width for mobile screens */
+    height: 28vh; /* Adjust height for mobile screens */
+    font-size: 0.9em; /* Adjust font size for mobile screens */
+  }
+
+  .card::before,
+  .card::after {
+    width: 102%; /* Further increase width for mobile screens */
+    height: 102%; /* Further increase height for mobile screens */
+  }
+
+  .card::after {
+    top: calc(40vh / 6); /* Adjust top positioning for mobile screens */
+    filter: blur(calc(40vh / 6));
+  }
+}

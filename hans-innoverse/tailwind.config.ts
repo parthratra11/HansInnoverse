@@ -12,7 +12,27 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "custom-image": "url('/background3.jpg')",
+      },
+      fontFamily: {
+        hours: ["Hours", "sans-serif"],
+        mont: ["Montserrat"],
+      },
+      keyframes: {
+        typing: {
+          from: { width: "0%" },
+          to: { width: "100%" },
+        },
+        blink: {
+          "50%": { borderColor: "transparent" },
+        },
+      },
+      animation: {
+        typing: "typing 4s steps(40, end) forwards",
+        blink: "blink 0.5s step-end infinite",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;

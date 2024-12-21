@@ -1,0 +1,56 @@
+/* components/BgAnimation.module.css */
+.bgAnimation {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  /* background: #212534; */
+  background: #1a1a1d;
+  filter: saturate(2);
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: all;
+}
+
+.backgroundAmim {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(6, 182, 212, 0.5); /* cyan-400 with opacity */
+  filter: blur(60px);
+  animation: animBack 5s linear infinite;
+}
+
+@keyframes animBack {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 120%;
+  }
+}
+
+.colorBox {
+  z-index: 5;
+  filter: brightness(0.9);
+  transition: 2s ease;
+  position: relative;
+  margin: 2px;
+  background: rgba(6, 182, 212, 0.1);
+  background: #092635;
+  pointer-events: all;
+}
+
+.colorBox:hover {
+  /* background: rgba(6, 182, 212, 0.3);  */
+  background: #092635;
+  filter: brightness(1.8);
+  transition-duration: 0s;
+  z-index: 7;
+}

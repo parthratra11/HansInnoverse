@@ -1,0 +1,30 @@
+.link-effect {
+  overflow: hidden;
+}
+
+.link-effect a {
+  overflow: hidden;
+  padding: 10px;
+  height: 1em;
+  color: white;
+  font-weight: 400;
+}
+
+.link-effect a span {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.link-effect a span::before {
+  color: cyan;
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 400;
+  transform: translate3d(0, 0, 0);
+}
+
+.link-effect a:hover span {
+  transform: translateY(-100%);
+}
