@@ -69,9 +69,7 @@ const TimelineComponent = () => {
               {/* Date section */}
               <div
                 className={`w-5/12 ${
-                  index % 2 === 0
-                    ? "text-right pr-4 ml-2"
-                    : "text-left pl-4 mr-2"
+                  index % 2 === 0 ? "text-right pr-4" : "text-left pl-4"
                 }`}
               >
                 <span className="text-gray-200 font-semibold font-sans md:text-xl">
@@ -91,9 +89,7 @@ const TimelineComponent = () => {
               {/* Content section */}
               <div
                 className={`w-5/12 ${
-                  index % 2 === 0
-                    ? "text-left pl-4 mr-2"
-                    : "text-right pr-4 ml-2"
+                  index % 2 === 0 ? "text-left pl-4" : "text-right pr-4"
                 }`}
               >
                 <div className="timeline-text border-2 rounded-md border-gray-600 bg-gray-900 px-3 py-2 font-medium font-mono md:text-xl text-gray-200">
