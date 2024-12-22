@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import * as React from "react";
@@ -10,8 +11,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { useEffect } from "react";
 import { FaRegCircle } from "react-icons/fa6";
-
-// import "./TimelineComponent.css"; // Include the CSS file
+import "./timeline.css";
 
 export default function TimelineComponent() {
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function TimelineComponent() {
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the item is visible
+      { threshold: 0.5 }
     );
 
     items.forEach((item) => observer.observe(item));
@@ -39,10 +39,7 @@ export default function TimelineComponent() {
     <>
       <section
         id="timeline"
-        // className="min-h-screen py-12 sm:py-20 relative z-50 bg-[#05101d]"
-        // className="min-h-screen py-12 sm:py-12 relative z-50 bg-gradient-to-r from-[#05101d] to-[#000000]"
         className="min-h-screen py-12 sm:py-10 relative z-50 bg-custom-image bg-cover"
-        // className="min-h-screen py-12 sm:py-20 relative z-50 bg-custom-image bg-cover"
       >
         <div className="text-center text-gray-200 font-extrabold font-mont text-6xl mb-8">
           Timeline
@@ -56,7 +53,6 @@ export default function TimelineComponent() {
               27th December 2024
             </TimelineOppositeContent>
             <TimelineSeparator>
-              {/* <TimelineDot className="timeline-dot" /> */}
               <FaRegCircle
                 size="40"
                 className="timeline-dot my-2"
@@ -79,7 +75,6 @@ export default function TimelineComponent() {
               31st January 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
-              {/* <TimelineDot className="timeline-dot" /> */}
               <FaRegCircle
                 size="40"
                 className="timeline-dot my-2"
@@ -97,7 +92,6 @@ export default function TimelineComponent() {
               7th February 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
-              {/* <TimelineDot className="timeline-dot" /> */}
               <FaRegCircle
                 size="40"
                 className="timeline-dot my-2"
@@ -120,7 +114,6 @@ export default function TimelineComponent() {
               14th February 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
-              {/* <TimelineDot className="timeline-dot" /> */}
               <FaRegCircle
                 size="40"
                 className="timeline-dot my-2"
@@ -138,7 +131,6 @@ export default function TimelineComponent() {
               16th February 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
-              {/* <TimelineDot className="timeline-dot" /> */}
               <FaRegCircle
                 size="40"
                 className="timeline-dot my-2"
@@ -156,7 +148,6 @@ export default function TimelineComponent() {
               22nd February 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
-              {/* <TimelineDot className="timeline-dot" /> */}
               <FaRegCircle
                 size="40"
                 className="timeline-dot my-2"

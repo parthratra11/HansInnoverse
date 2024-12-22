@@ -1,4 +1,4 @@
-// components/BgAnimation.tsx
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React, { useEffect } from "react";
 import styles from "./BgAnimation.module.css";

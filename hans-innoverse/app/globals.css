@@ -3,48 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.timeline-item {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.timeline-item.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.timeline-connector {
-  height: 0;
-  transition: height 1s ease;
-}
-
-.timeline-item.animate .timeline-connector {
-  height: 100%;
-}
-
-.timeline-dot {
-  transform: scale(0);
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.timeline-item.animate .timeline-dot {
-  transform: scale(1.2); /* Slightly larger during animation */
-  opacity: 1;
-}
-
-.timeline-text {
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.timeline-item.animate .timeline-text {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 @font-face {
   font-family: "Hours";
   src: url("/fonts/hours/ttf/hours-hours-regular-typeface-400.ttf")
@@ -131,12 +89,10 @@
   }
 }
 
-/* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
 }
 
-/* Smooth transition for background color or any changes in elements */
 body,
 .link-effect {
   transition: background-color 0.3s ease, color 0.3s ease;

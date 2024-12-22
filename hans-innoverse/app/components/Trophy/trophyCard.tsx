@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 
 const TrophyCard = ({
@@ -44,7 +45,6 @@ const TrophyCard = ({
       group
     `}
     >
-      {/* Content Container */}
       <div className="relative h-full grid place-items-center">{children}</div>
     </div>
   );

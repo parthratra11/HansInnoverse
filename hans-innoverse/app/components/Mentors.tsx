@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 
-// Custom hook for intersection observer
 const useIntersectionObserver = (options = {}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const elementRef = useRef(null);
@@ -28,6 +28,7 @@ const useIntersectionObserver = (options = {}) => {
   return [elementRef, isIntersecting];
 };
 
+// @ts-ignore
 const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
   const [ref, isVisible] = useIntersectionObserver({
     threshold: 0.2,

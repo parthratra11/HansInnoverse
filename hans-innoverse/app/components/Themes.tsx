@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import Link from "next/link";
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-// Custom hook for intersection observer
 const useIntersectionObserver = (options = {}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const elementRef = useRef(null);
@@ -162,7 +162,7 @@ const ThemesComponent = () => {
             href="https://drive.google.com/file/d/1333PTTL9gVDrYo3P-OwYVsMFAEKTUW7Y/view"
             target="_blank"
           >
-            <button className="text-center border justify-center items-center bg-gray-950 bg-opacity-60 hover:scale-105 border-yellow-500 rounded-lg py-3 px-10 relative mt-10 z-20 font-semibold font-mono text-yellow-500 text-xl">
+            <button className="text-center border justify-center items-center bg-gray-950 bg-opacity-60 hover:scale-105 duration-300 border-yellow-500 rounded-lg py-3 px-10 relative mt-10 z-20 font-semibold font-mono text-yellow-500 text-xl">
               <span className="flex flex-row justify-center items-center gap-2">
                 PPT Template
                 <MdOutlineArrowOutward size="30" />

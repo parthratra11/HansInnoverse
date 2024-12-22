@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 
-// Custom hook for intersection observer
 const useIntersectionObserver = (options = {}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const elementRef = useRef(null);
@@ -37,7 +37,6 @@ const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
   return (
     <div
       ref={ref}
-      // className={`relative flex justify-evenly rounded-lg items-end overflow-hidden w-full min-w-56 min-h-96 sm:min-h-60 text-center text-gray-100 bg-gray-100 shadow-[0_1px_1px_rgba(0,0,0,0.1),0_2px_2px_rgba(0,0,0,0.1),0_4px_4px_rgba(0,0,0,0.1),0_8px_8px_rgba(0,0,0,0.1),0_16px_16px_rgba(0,0,0,0.1)] md:h-[400px] group transition-all duration-700 ${
       className={`relative flex justify-evenly rounded-lg items-end overflow-hidden w-full text-center text-gray-100 bg-gray-100 shadow-[0_1px_1px_rgba(0,0,0,0.1),0_2px_2px_rgba(0,0,0,0.1),0_4px_4px_rgba(0,0,0,0.1),0_8px_8px_rgba(0,0,0,0.1),0_16px_16px_rgba(0,0,0,0.1)] group transition-all duration-700 min-h-96 sm:min-h-60 md:h-[300px] ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}

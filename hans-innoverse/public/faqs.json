@@ -1,0 +1,54 @@
+[
+  {
+    "question": "What is the date and duration of the hackathon?",
+    "answer": "The hackathon will be held on 22nd February and will run for 12 hours."
+  },
+  {
+    "question": "Where will the hackathon take place?",
+    "answer": "The venue for the event is Hansraj College."
+  },
+  {
+    "question": "What are the prize amounts?",
+    "answer": "The prize money will be distributed as follows: <ul><li>1st Prize: ₹5,000</li><li>2nd Prize: ₹3,000</li><li>3rd Prize: ₹2,000</li></ul>"
+  },
+  {
+    "question": "Who can participate in the hackathon?",
+    "answer": "The hackathon is open to students, professionals, and coding enthusiasts. Please check the registration guidelines for eligibility details."
+  },
+  {
+    "question": "How can I register for the hackathon?",
+    "answer": "You can register through Unstop. Registration closes on 31st January 2025."
+  },
+  {
+    "question": "What do I need to bring?",
+    "answer": "Bring your own laptop, chargers, extension cord and other necessary equipment. Wi-Fi and power outlets will be provided."
+  },
+  {
+    "question": "Will food and refreshments be provided?",
+    "answer": "Yes, snacks and lunch will be provided during the hackathon."
+  },
+  {
+    "question": "Can I participate remotely?",
+    "answer": "No, this is an on-site event, and participants must be present at Hansraj College for final round."
+  },
+  {
+    "question": "Will there be support during the event?",
+    "answer": "Yes, volunteers will be available to guide you and answer questions during the hackathon."
+  },
+  {
+    "question": "When will the winners be announced?",
+    "answer": "Winners will be announced immediately after the project presentations at the end of the Hackathon."
+  },
+  {
+    "question": "Whom can I contact for more information?",
+    "answer": "For queries, reach out to us at [contact email] or call [contact number]."
+  },
+  {
+    "question": "Will accomodations be provided to the participants?",
+    "answer": "No, accomodations won't be provided to the participants."
+  },
+  {
+    "question": "Can we bring a mentor along with the team?",
+    "answer": "No, only the participants would be allowed to enter the campus"
+  }
+]

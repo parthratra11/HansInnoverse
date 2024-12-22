@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import Link from "next/link";
@@ -23,11 +24,9 @@ const TypewriterText = () => {
 
   return (
     <div className="relative text-xl h-32 md:h-24 text-cyan-300 mb-4 max-w-2xl font-mono border border-cyan-500/20 p-4 bg-black/40 backdrop-blur-sm z-30">
-      {/* Invisible text to maintain container size */}
       <div className="invisible h-0 whitespace-pre-line" aria-hidden="true">
         {fullText}
       </div>
-      {/* Visible animated text */}
       <div className="whitespace-pre-line absolute top-4 left-4">
         {text}
         <span className="animate-pulse">_</span>

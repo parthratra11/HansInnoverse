@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import {
   RiDiscordLine,
@@ -23,29 +24,11 @@ const Footer: React.FC = () => {
                 src="/hrc.png"
                 alt="Hansraj Logo"
                 className="bg-white rounded-md p-2"
-                // width={100}
-                // height={100}
               />
-              <img
-                src="/iic.jpg"
-                alt="IIC Logo"
-                className="rounded-md"
-                // width={100}
-                // height={100}
-              />
-              <img
-                src="/ordinateur.png"
-                alt="Ordinateur Logo"
-                // width={100}
-                // height={100}
-              />
+              <img src="/iic.jpg" alt="IIC Logo" className="rounded-md" />
+              <img src="/ordinateur.png" alt="Ordinateur Logo" />
             </div>
-            <img
-              src="/logo.png"
-              alt="हंसInnoverse Logo"
-              // width={200}
-              // height={200}
-            />
+            <img src="/logo.png" alt="हंसInnoverse Logo" />
             <p className="text-xs text-gray-300 w-[105%] mt-2 font-mono">
               Welcome to हंसInnoverse, a 12-hour hackathon where innovation
               meets technology. Our event brings together creative minds to
@@ -117,7 +100,6 @@ const Footer: React.FC = () => {
 
           {/* Contact and Get Involved Section */}
           <div>
-            {/* <div className="h-[250px] w-full rounded-lg overflow-hidden"> */}
             <div className="h-full w-full rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8890731166856!2d77.2102467!3d28.6797055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd9a74a2aacf%3A0x59e09f11f71c1a54!2sHansraj+College!5e0!3m2!1sen!2sin!4v1707654321!5m2!1sen!2sin"

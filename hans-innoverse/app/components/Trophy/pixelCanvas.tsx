@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -7,7 +8,6 @@ export default function PixelCanvas({
   colors = ["#f8fafc", "#f1f5f9", "#cbd5e1"],
   gap = 5,
   speed = 35,
-  // imgSrc,
   noFocus = false,
 }) {
   const canvasRef = useRef(null);
@@ -108,12 +108,6 @@ export default function PixelCanvas({
       onBlur={() => !noFocus && handleAnimation("disappear")}
     >
       <canvas ref={canvasRef} />
-      {/* <img src={imgSrc} className="absolute z-10"></img> */}
-      {/* <img
-        src="/2nd.png"
-        alt="Decorative"
-        className="absolute top-0 left-0 w-full h-full object-contain z-10"
-      /> */}
     </div>
   );
 }

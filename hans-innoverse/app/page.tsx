@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import PrizesComponent from "./components/Prizes";
 import TimelineComponent from "./components/Timeline";
 import OrganizersComponent from "./components/Organizers";
@@ -15,16 +17,6 @@ import { Timeline } from "@mui/lab";
 export default function Home() {
   return (
     <>
-      {/* <div className="relative z-10 flex flex-col items-center justify-center h-full">
-
-        <TimelineComponent />
-        <PrizesComponent />
-        <OrganizersComponent />
-        <MentorsComponent />
-        <ThemesComponent />
-        <FaqComponent />
-      </div> */}
-
       <BgAnimation />
       <div>
         <Navbar />
@@ -36,12 +28,10 @@ export default function Home() {
         <section
           id="team"
           className="min-h-screen py-12 sm:py-10 relative z-50 bg-gradient-to-r from-[#000000] to-[#05101d]"
-          // className="min-h-screen py-12 sm:py-20 relative z-50 bg-custom-image bg-cover"
         >
           <MentorsComponent />
           <OrganizersComponent />
         </section>
-
         <FaqComponent />
         <Banner />
         <Footer />
