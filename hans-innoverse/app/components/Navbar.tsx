@@ -9,45 +9,34 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div className="fixed md:relative w-full top-0 z-50">
       <div className="bg-gradient-to-r from-[#000000] to-[#05101d] backdrop-blur-md border-b border-cyan-500/30">
         <div className="max-w-8xl mx-auto pl-3 sm:pl-3 lg:pl-3">
           <div className="flex justify-between h-[5rem] items-center">
             {/* Logo Section */}
-            <div className="items-center grid grid-cols-[2fr_1.27fr_1fr_3fr]">
+            <div className="items-center grid grid-cols-[2fr_1.27fr_1fr_3fr] mr-20 md:mr-0">
               <img
                 src="/hrc.png"
                 alt="Hansraj Logo"
-                // width={120}
-                // height={120}
-                className="bg-white py-1 hidden md:block rounded-sm"
+                className="bg-white py-0.5 md:py-1 md:block rounded-sm"
               />
               <img
                 src="/iic.jpg"
                 alt="IIC Logo"
-                // width={70}
-                // height={70}
-                className="hidden md:block mx-1 rounded-sm"
+                className="md:block mx-1 rounded-sm"
               />
               <img
                 src="/ordinateur.png"
                 alt="Ordinateur Logo"
-                className="mb-1 hidden md:block pl-1"
-                // width={70}
-                // height={70}
+                className="mb-1 md:block pl-1"
               />
-              <img
-                src="/logo.png"
-                alt="हंसInnoverse Logo"
-                // width={180}
-                // height={180}
-              />
+              <img src="/logo.png" alt="हंसInnoverse Logo" />
             </div>
 
             {/* Hamburger Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-white hover:text-cyan-400"
+              className="md:hidden p-2 text-white hover:text-cyan-400 z-50"
             >
               <svg
                 className="h-6 w-6"
@@ -111,10 +100,12 @@ const Navbar = () => {
           {/* Mobile Menu */}
           <div
             className={`${
-              isOpen ? "block" : "hidden"
-            } md:hidden bg-[#1D2543] py-4 top-[5rem] left-0 right-0 relative z-60 border-b border-cyan-500/30`}
+              isOpen
+                ? "translate-y-0 opacity-100"
+                : "-translate-y-full opacity-0"
+            } fixed top-[5rem] left-0 right-0 bg-gradient-to-r from-[#000000] to-[#05101d] transition-all duration-300 ease-in-out md:hidden shadow-lg z-70`}
           >
-            <div className="flex flex-col space-y-4 px-4">
+            <div className="flex flex-col space-y-4 p-6 border-t font-mont border-cyan-500/30">
               <Link
                 href="/"
                 className="text-white hover:text-cyan-400 transition-colors"
@@ -153,7 +144,7 @@ const Navbar = () => {
               <Link
                 href="https://unstop.com"
                 target="_blank"
-                className="inline-block text-white font-bold hover:text-cyan-400 transition-colors"
+                className="inline-block text-white font-semibold py-2 w-1/3 px-3 bg-gradient-to-r from-cyan-600 to-fuchsia-600 rounded transition-all hover:scale-105"
                 onClick={() => setIsOpen(false)}
               >
                 [ REGISTER ]
@@ -162,7 +153,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

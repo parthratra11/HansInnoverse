@@ -130,3 +130,14 @@
     --rotate: 360deg;
   }
 }
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth transition for background color or any changes in elements */
+body,
+.link-effect {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

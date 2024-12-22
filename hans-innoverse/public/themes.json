@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Education",
+    "image": "/Themes/education.jpg"
+  },
+  {
+    "title": "Health",
+    "image": "/Themes/health.jpg"
+  },
+  {
+    "title": "Transport",
+    "image": "/Themes/transport.jpg"
+  },
+  {
+    "title": "Gaming",
+    "image": "/Themes/gaming.jpg"
+  },
+  {
+    "title": "E-commerce",
+    "image": "/Themes/eCommerce.jpg"
+  },
+  {
+    "title": "Social Media",
+    "image": "/Themes/socialMedia.jpg"
+  },
+  {
+    "title": "Cybersecurity",
+    "image": "/Themes/cybersecurity.jpg"
+  },
+  {
+    "title": "FinTech",
+    "image": "/Themes/finTech.jpg"
+  },
+  {
+    "title": "IOT",
+    "image": "/Themes/iot.jpg"
+  }
+]

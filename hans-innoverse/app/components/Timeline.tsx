@@ -52,7 +52,7 @@ export default function TimelineComponent() {
           className="w-full px-8 text-gray-200 flex items-center justify-center flex-wrap relative z-10"
         >
           <TimelineItem className="timeline-item w-full lg:w-2/3">
-            <TimelineOppositeContent className="timeline-text mr-5 font-semibold font-sans text-xl">
+            <TimelineOppositeContent className="timeline-text mr-5 font-semibold font-sans md:text-xl">
               27th December 2024
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -64,7 +64,7 @@ export default function TimelineComponent() {
               />
               <TimelineConnector className="timeline-connector" />
             </TimelineSeparator>
-            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 ml-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono text-xl">
+            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 ml-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono md:text-xl">
               Registration Starts
             </TimelineContent>
           </TimelineItem>
@@ -72,9 +72,9 @@ export default function TimelineComponent() {
           <TimelineItem className="timeline-item w-full lg:w-2/3">
             <TimelineOppositeContent
               className="timeline-text ml-5
-              font-semibold
-              font-sans
-              text-xl"
+                font-semibold
+                font-sans
+                md:text-xl"
             >
               31st January 2025
             </TimelineOppositeContent>
@@ -87,13 +87,13 @@ export default function TimelineComponent() {
               />
               <TimelineConnector className="timeline-connector" />
             </TimelineSeparator>
-            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 mr-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono text-xl">
+            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 mr-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono md:text-xl">
               Registration Closes
             </TimelineContent>
           </TimelineItem>
 
           <TimelineItem className="timeline-item w-full lg:w-2/3">
-            <TimelineOppositeContent className="timeline-text mr-5 font-semibold font-sans text-xl">
+            <TimelineOppositeContent className="timeline-text mr-5 font-semibold font-sans md:text-xl">
               7th February 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -105,7 +105,7 @@ export default function TimelineComponent() {
               />
               <TimelineConnector className="timeline-connector" />
             </TimelineSeparator>
-            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 ml-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono text-xl">
+            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 ml-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono md:text-xl">
               Shortlisted Teams Result
             </TimelineContent>
           </TimelineItem>
@@ -113,9 +113,9 @@ export default function TimelineComponent() {
           <TimelineItem className="timeline-item w-full lg:w-2/3">
             <TimelineOppositeContent
               className="timeline-text ml-5
-              font-semibold
-              font-sans
-              text-xl"
+                font-semibold
+                font-sans
+                md:text-xl"
             >
               14th February 2025
             </TimelineOppositeContent>
@@ -128,13 +128,13 @@ export default function TimelineComponent() {
               />
               <TimelineConnector className="timeline-connector" />
             </TimelineSeparator>
-            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 mr-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono text-xl">
+            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 mr-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono md:text-xl">
               Online Presentation Round
             </TimelineContent>
           </TimelineItem>
 
           <TimelineItem className="timeline-item w-full lg:w-2/3">
-            <TimelineOppositeContent className="timeline-text mr-5 font-semibold font-sans text-xl">
+            <TimelineOppositeContent className="timeline-text mr-5 font-semibold font-sans md:text-xl">
               16th February 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -146,13 +146,13 @@ export default function TimelineComponent() {
               />
               <TimelineConnector className="timeline-connector" />
             </TimelineSeparator>
-            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 ml-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono text-xl">
+            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 ml-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono md:text-xl">
               Online Round Results
             </TimelineContent>
           </TimelineItem>
 
           <TimelineItem className="timeline-item w-full lg:w-2/3">
-            <TimelineOppositeContent className="timeline-text ml-5 font-semibold font-sans text-xl">
+            <TimelineOppositeContent className="timeline-text ml-5 font-semibold font-sans md:text-xl">
               22nd February 2025
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -164,12 +164,12 @@ export default function TimelineComponent() {
               />
               <TimelineConnector className="timeline-connector" />
             </TimelineSeparator>
-            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 mr-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono text-xl">
+            <TimelineContent className="timeline-text border-2 rounded-md border-gray-600 mr-4 mb-8 mt-2 bg-gray-900 px-4 py-2 font-medium font-mono md:text-xl">
               Offline 12hr Hackathon
             </TimelineContent>
           </TimelineItem>
         </Timeline>
-        <div className=" text-center text-gray-200 font-semibold text-3xl font-mono">
+        <div className=" text-center text-gray-200 font-semibold text-2xl md:text-3xl font-mono">
           Results
         </div>
       </section>

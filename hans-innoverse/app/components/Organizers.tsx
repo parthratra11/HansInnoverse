@@ -28,41 +28,6 @@ const useIntersectionObserver = (options = {}) => {
   return [elementRef, isIntersecting];
 };
 
-const cards = [
-  {
-    name: "Netresh Singh",
-    title: "President",
-    image: "/Organizers/netresh.jpg",
-    linkedin: "https://www.linkedin.com/in/",
-    instagram: "",
-    email: "mailto:netreshhansraj@gmail.com",
-  },
-  {
-    name: "Harshit Rawat",
-    title: "Vice-President",
-    image: "/Organizers/harshit.jpg",
-    linkedin: "https://www.linkedin.com/in/harshit-rawat-7148031b3",
-    instagram: "https://www.instagram.com/harshit_hr13",
-    email: "mailto:rawat10harshit@gmail.com",
-  },
-  {
-    name: "Yashasvi Mittal",
-    title: "General Secretary",
-    image: "/Organizers/yashasvi.jpg",
-    linkedin: "https://www.linkedin.com/in/yashasvi-mittal-4897462b1",
-    instagram: "",
-    email: "mailto:yashasvimittal532@gmail.com",
-  },
-  {
-    name: "Shivangi Priya",
-    title: "Treasurer",
-    image: "",
-    linkedin: "",
-    instagram: "",
-    email: "mailto:",
-  },
-];
-
 const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
   const [ref, isVisible] = useIntersectionObserver({
     threshold: 0.2,
@@ -93,17 +58,13 @@ const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
         <h2 className="text-md font-semibold text-lg font-sans mb-2">{name}</h2>
         <p className="text-xs font-semibold text-gray-300 mb-2">{title}</p>
 
-        <div className="text-xs flex flex-row gap-4 font-bold tracking-wider mb-4 uppercase text-white focus:outline-dashed focus:outline-yellow-400 focus:outline-offset-2 opacity-0 transform translate-y-4 transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:opacity-100 group-hover:translate-y-0">
+        <div className="text-xs flex flex-row gap-1 font-bold tracking-wider mb-4 uppercase text-white focus:outline-dashed focus:outline-yellow-400 focus:outline-offset-2 opacity-0 transform translate-y-4 transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:opacity-100 group-hover:translate-y-0">
           {linkedin && (
             <a href={linkedin} target="_blank" rel="noopener noreferrer">
               <FaLinkedin size="30" color="white" />
             </a>
           )}
-          {instagram && (
-            <a href={instagram} target="_blank" rel="noopener noreferrer">
-              <FaInstagram size="30" color="white" />
-            </a>
-          )}
+
           {email && (
             <a href={email}>
               <IoMailOutline size="30" color="white" />
@@ -121,11 +82,20 @@ const OrganizersComponent = () => {
     rootMargin: "50px",
   });
 
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    fetch("/organizers.json")
+      .then((response) => response.json())
+      .then((data) => setCards(data))
+      .catch((error) => console.error("Error fetching JSON:", error));
+  }, []);
+
   return (
     <>
       <div
         ref={headerRef}
-        className={`text-gray-200 text-center flex flex-col justify-center items-center relative z-10 font-extrabold font-mont text-5xl mb-6 mt-6 transition-all duration-700 px-4 ${
+        className={`text-gray-200 text-center flex flex-col justify-center items-center relative z-10 font-extrabold font-mont text-5xl mb-6 mt-8 md:mt-6 transition-all duration-700 px-4 ${
           isHeaderVisible
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-5"

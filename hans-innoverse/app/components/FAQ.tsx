@@ -32,7 +32,7 @@ const faqData = [
   {
     question: "What do I need to bring?",
     answer:
-      "Bring your own laptop, chargers, and other necessary equipment. Wi-Fi and power outlets will be provided.",
+      "Bring your own laptop, chargers, extension cord and other necessary equipment. Wi-Fi and power outlets will be provided.",
   },
   {
     question: "Will food and refreshments be provided?",
@@ -41,7 +41,7 @@ const faqData = [
   {
     question: "Can I participate remotely?",
     answer:
-      "No, this is an on-site event, and participants must be present at Hansraj College.",
+      "No, this is an on-site event, and participants must be present at Hansraj College for final round.",
   },
   {
     question: "Will there be support during the event?",
@@ -75,7 +75,7 @@ export default function FaqComponent() {
       className="min-h-screen py-12 sm:py-10 relative z-50 bg-custom-image bg-contain font-mont"
       // className="min-h-screen py-12 sm:py-20 relative z-50 bg-custom-image bg-cover"
     >
-      <div className="text-gray-200 relative z-10 font-extrabold font-mont text-5xl animate-in slide-in-from-bottom-4 fade-in-5 duration-700 px-6">
+      <div className="text-gray-200 relative z-10 font-extrabold font-mont text-5xl animate-in slide-in-from-bottom-4 fade-in-5 duration-700 px-7">
         FAQs
       </div>
       <div className="px-6 mt-6 mb-6">

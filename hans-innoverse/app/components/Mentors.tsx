@@ -28,49 +28,6 @@ const useIntersectionObserver = (options = {}) => {
   return [elementRef, isIntersecting];
 };
 
-const cards = [
-  {
-    name: "Mayank Yadav",
-    title: "Head of Development",
-    image: "/Mentors/mayank.jpg",
-    linkedin: "https://www.linkedin.com/in/mayank-yadav-9ab5531b8",
-    instagram: "https://www.instagram.com/mayank_1358",
-    email: "mailto:mayankrao576@gmail.com",
-  },
-  {
-    name: "Pranay Rajvanshi",
-    title: "Head of Development",
-    image: "/Mentors/pranay.jpg",
-    linkedin: "https://www.linkedin.com/in/pranay-rajvanshi",
-    instagram: "https://www.instagram.com/pranay.rajvanshi",
-    email: "mailto:pranayforeverything@gmail.com",
-  },
-  {
-    name: "Parth Ratra",
-    title: "Head of Development",
-    image: "/Mentors/parth.jpg",
-    linkedin: "https://www.linkedin.com/in/parthratra11",
-    instagram: "https://www.instagram.com/parthratra11",
-    email: "mailto:",
-  },
-  {
-    name: "Kirti Rathi",
-    title: "Website Head",
-    image: "/Mentors/kirti.jpg",
-    linkedin: "https://www.linkedin.com/in/kirti-rathi/",
-    instagram: "",
-    email: "mailto:kirtirathi282@gmail.com",
-  },
-  {
-    name: "Deepak Sharma",
-    title: "Website Head",
-    image: "/Mentors/deepak.jpg",
-    linkedin: "https://www.linkedin.com/in/deepak-sharma-645252257/",
-    instagram: "",
-    email: "mailto:ds4754369@gmail.com",
-  },
-];
-
 const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
   const [ref, isVisible] = useIntersectionObserver({
     threshold: 0.2,
@@ -97,17 +54,13 @@ const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
         <h2 className="text-md font-semibold text-lg font-sans mb-2">{name}</h2>
         <p className="text-xs font-semibold text-gray-300 mb-2">{title}</p>
 
-        <div className="text-xs flex flex-row gap-4 font-bold tracking-wider mb-4 uppercase text-white focus:outline-dashed focus:outline-yellow-400 focus:outline-offset-2 opacity-0 transform translate-y-4 transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:opacity-100 group-hover:translate-y-0">
+        <div className="text-xs flex flex-row gap-1 font-bold tracking-wider mb-4 uppercase text-white focus:outline-dashed focus:outline-yellow-400 focus:outline-offset-2 opacity-0 transform translate-y-4 transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:opacity-100 group-hover:translate-y-0">
           {linkedin && (
             <a href={linkedin} target="_blank" rel="noopener noreferrer">
               <FaLinkedin size="30" color="white" />
             </a>
           )}
-          {instagram && (
-            <a href={instagram} target="_blank" rel="noopener noreferrer">
-              <FaInstagram size="30" color="white" />
-            </a>
-          )}
+
           {email && (
             <a href={email}>
               <IoMailOutline size="30" color="white" />
@@ -124,6 +77,15 @@ const MentorsComponent = () => {
     threshold: 0.2,
     rootMargin: "50px",
   });
+
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    fetch("/mentors.json")
+      .then((response) => response.json())
+      .then((data) => setCards(data))
+      .catch((error) => console.error("Error fetching JSON:", error));
+  }, []);
 
   return (
     <>

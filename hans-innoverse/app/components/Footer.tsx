@@ -1,5 +1,12 @@
 import React from "react";
-import { RiDiscordLine, RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
+import {
+  RiDiscordLine,
+  RiInstagramLine,
+  RiLinkedinLine,
+  RiMailAiLine,
+  RiMailFill,
+  RiMailLine,
+} from "react-icons/ri";
 
 const Footer: React.FC = () => {
   return (
@@ -39,7 +46,7 @@ const Footer: React.FC = () => {
               // width={200}
               // height={200}
             />
-            <p className="text-xs text-gray-300 w-[110%] mt-2 font-mono">
+            <p className="text-xs text-gray-300 w-[105%] mt-2 font-mono">
               Welcome to हंसInnoverse, a 12-hour hackathon where innovation
               meets technology. Our event brings together creative minds to
               solve real-world challenges through cutting-edge technology
@@ -82,6 +89,7 @@ const Footer: React.FC = () => {
                 <a
                   href="https://docs.google.com/document/d/1be5pkCyeRR_UDj7JGUkNt6_CkJ3h7-i9m4Ye_EaPI_A/edit?usp=sharing"
                   className="relative group"
+                  target="_blank"
                 >
                   <span className="relative pb-2">Guidelines</span>
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-cyan-500 transition-all duration-300 group-hover:w-full"></span>
@@ -89,26 +97,20 @@ const Footer: React.FC = () => {
               </li>
             </ul>
             <div className="flex space-x-2 mt-6">
-              {/* <a
-                href="#"
-                aria-label="Discord"
-                className="bg-white bg-opacity-10 p-3 rounded-full text-white hover:text-cyan-400 hover:-translate-y-2 transition-all duration-200"
-              >
-                <RiDiscordLine className="text-2xl" />
-              </a> */}
               <a
-                href="#"
+                href="mailto:ordinateur.hrc.du@gmail.com"
+                aria-label="Mail"
+                className="bg-white bg-opacity-10 rounded-full p-2  text-white hover:text-cyan-400 hover:-translate-y-2 transition-all duration-200"
+              >
+                <RiMailLine className="text-2xl " />
+              </a>
+              <a
+                href="https://www.instagram.com/ordinateur.hrc"
+                target="_blank"
                 aria-label="Instagram"
                 className="bg-white bg-opacity-10 rounded-full p-2  text-white hover:text-cyan-400 hover:-translate-y-2 transition-all duration-200"
               >
                 <RiInstagramLine className="text-2xl " />
-              </a>
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="bg-white bg-opacity-10 rounded-full p-2  text-white hover:text-cyan-400 hover:-translate-y-2 transition-all duration-200"
-              >
-                <RiLinkedinLine className="text-2xl " />
               </a>
             </div>
           </div>

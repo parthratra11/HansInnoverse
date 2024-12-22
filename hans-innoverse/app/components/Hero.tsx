@@ -22,7 +22,7 @@ const TypewriterText = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative text-xl h-24 text-cyan-300 mb-4 max-w-2xl font-mono border border-cyan-500/20 p-4 bg-black/40 backdrop-blur-sm z-50">
+    <div className="relative text-xl h-32 md:h-24 text-cyan-300 mb-4 max-w-2xl font-mono border border-cyan-500/20 p-4 bg-black/40 backdrop-blur-sm z-30">
       {/* Invisible text to maintain container size */}
       <div className="invisible h-0 whitespace-pre-line" aria-hidden="true">
         {fullText}
@@ -86,8 +86,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-[calc(100vh-5rem)] ">
-      <section className="h-[60vh] flex flex-col items-center justify-center text-center px-4 relative">
+    <div className="relative h-[calc(100vh-5rem)] flex flex-col">
+      <section className="h-[60vh] flex flex-col items-center justify-center text-center px-4 sm:px-8 md:px-16 relative ">
         <div>
           <h2
             className="text-5xl sm:text-7xl mb-8 font-bold relative z-10 text-white/90 text-center lg:text-left glitch"
@@ -99,38 +99,40 @@ export default function Hero() {
 
         <TypewriterText />
 
-        <div className="flex gap-4 z-50">
+        <div className="flex gap-4 z-30">
           <Link
             href="https://unstop.com"
             target="_blank"
-            className={`px-8 py-4 bg-gradient-to-r font-mono text-lg from-cyan-600 to-fuchsia-800 text-white font-bold rounded hover:scale-105 transition-transform border border-cyan-400/50 shadow-lg shadow-cyan-500/20 ${slideTextClass}`}
+            className={`px-8 py-4 bg-gradient-to-r font-mono md:text-lg from-cyan-600 to-fuchsia-800 text-white font-bold rounded hover:scale-105 transition-transform border border-cyan-400/50 shadow-lg shadow-cyan-500/20 ${slideTextClass}`}
           >
             [ REGISTER ]
           </Link>
           <Link
             href="https://docs.google.com/document/d/1be5pkCyeRR_UDj7JGUkNt6_CkJ3h7-i9m4Ye_EaPI_A/edit?usp=sharing"
             target="_blank"
-            className="px-8 py-4 font-mono text-lg bg-black/50 text-cyan-400 font-bold rounded border border-cyan-500/30 hover:bg-cyan-900/20 transition-colors backdrop-blur-sm ${slideTextClass}}"
+            className="px-8 py-4 font-mono md:text-lg bg-black/50 text-cyan-400 font-bold rounded border border-cyan-500/30 hover:bg-cyan-900/20 transition-colors backdrop-blur-sm ${slideTextClass}}"
           >
             [ SYSTEM INFO ]
           </Link>
         </div>
       </section>
 
-      <section className="h-[20vh] flex flex-col items-center justify-center px-4 text-center z-50">
-        <h2 className="text-4xl font-bold text-gray-200 mb-4 font-mono z-50">
+      <section className="h-[20vh] flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 text-center z-30">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-200 mb-4 font-mono z-30">
           SYSTEM LAUNCH IN
         </h2>
-        <div className="flex justify-center gap-8 z-50">
+        <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 z-50">
           {Object.entries(timeLeft).map(([unit, value]) => (
             <div
               key={unit}
               className="bg-black/60 rounded border border-cyan-500/30 p-4 shadow-lg shadow-cyan-500/20 z-50"
             >
-              <div className="text-4xl font-bold text-cyan-400 mb-2 font-mono">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-cyan-400 mb-1 sm:mb-2 font-mono">
                 {value}
               </div>
-              <div className="text-cyan-300 uppercase font-mono">{unit}</div>
+              <div className="text-xs sm:text-sm md:text-base text-cyan-300 uppercase font-mono">
+                {unit}
+              </div>
             </div>
           ))}
         </div>
