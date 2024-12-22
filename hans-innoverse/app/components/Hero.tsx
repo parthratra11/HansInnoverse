@@ -164,14 +164,14 @@ const TypewriterText = () => {
   }, [currentIndex]);
 
   return (
-    <div className="relative text-lg h-auto min-h-[8rem] text-cyan-300 mb-2 max-w-2xl font-mono border border-cyan-500/20 p-3 sm:p-4 bg-black/40 backdrop-blur-sm z-30 overflow-hidden">
+    <div className="relative text-md md:text-lg h-auto min-h-[8rem] text-cyan-300 mb-2 max-w-2xl font-mono border border-cyan-500/20 p-3 sm:p-4 bg-black/40 backdrop-blur-sm z-30 overflow-hidden">
       <div
         className="invisible h-0 whitespace-pre-line break-words"
         aria-hidden="true"
       >
         {fullText}
       </div>
-      <div className="whitespace-pre-line break-words absolute top-3 sm:top-4 left-3 sm:left-4 right-3 sm:right-4">
+      <div className="whitespace-pre-line break-words px-2 text-left md:text-center absolute top-3 sm:top-4 left-3 sm:left-4 right-3 sm:right-4">
         {text}
         <span className="animate-pulse">_</span>
       </div>
