@@ -100,8 +100,9 @@ const MentorsComponent = () => {
       >
         Mentors
         <p className="text-gray-400 lg:w-2/3 font-mono text-base mt-4">
-          Meet the mentors who'll illuminate the path to success, guiding you
-          with wisdom and inspiration at every step.
+          Meet our mentors: passionate and experienced individuals dedicated to
+          supporting and inspiring you as you bring your innovative ideas to
+          life!
         </p>
       </div>
       <div className="grid gap-4 p-4 mx-auto font-sans md:grid-cols-3 lg:grid-cols-5">

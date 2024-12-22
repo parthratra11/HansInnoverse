@@ -29,18 +29,37 @@ export default function FaqComponent() {
         {faqData.map((faq, index) => (
           <Accordion
             key={index}
-            className="bg-transparent border-b border-gray-600 mb-2 rounded-lg overflow-hidden"
+            sx={{
+              backgroundColor: "transparent",
+              borderBottom: "1px solid rgba(96, 96, 96, 1)",
+              borderRadius: "8px",
+            }}
+            // className="bg-transparent border-b border-gray-600 mb-2 rounded-lg overflow-hidden"
+            className="mb-2 overflow-hidden"
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon className="text-white" />}
-              className="font-semibold text-gray-200 hover:bg-white/5 transition-colors"
+              sx={{
+                fontWeight: "600",
+                color: "rgba(255, 255, 255, 0.8)",
+                "&:hover": {
+                  backgroundColor: "rgba(255, 255, 255, 0.05)",
+                },
+              }}
+              // className="font-semibold text-gray-200 hover:bg-white/5 transition-colors"
             >
               {faq["question"]}
             </AccordionSummary>
-            <AccordionDetails className="border-t border-white/30">
+            <AccordionDetails
+              // className="border-t border-white/30"
+              sx={{
+                borderTop: "1px solid rgba(255, 255, 255, 0.3)",
+              }}
+            >
               <div
                 dangerouslySetInnerHTML={{ __html: faq["answer"] }}
-                className="text-white/90"
+                style={{ color: "rgba(255, 255, 255, 0.9)" }}
+                // className="text-white/90"
               />
             </AccordionDetails>
           </Accordion>

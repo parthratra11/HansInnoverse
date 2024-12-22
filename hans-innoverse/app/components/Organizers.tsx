@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 
 const useIntersectionObserver = (options = {}) => {
@@ -103,8 +103,9 @@ const OrganizersComponent = () => {
       >
         Organizers
         <p className="text-gray-400 lg:w-2/3 font-mono text-base mt-4">
-          Meet the organizers of HansInnoverse who expertly transform visions
-          into vibrant realities, uniting passion and purpose in every event.
+          Meet our organizers: the driving force behind the event, dedicated to
+          creating an engaging and impactful hackathon experience for everyone
+          involved!
         </p>
       </div>
 
