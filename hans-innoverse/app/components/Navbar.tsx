@@ -144,7 +144,7 @@ const Navbar = () => {
               <Link
                 href="https://unstop.com"
                 target="_blank"
-                className="inline-block text-white font-semibold py-2 w-1/3 px-3 bg-gradient-to-r from-cyan-600 to-fuchsia-600 rounded transition-all hover:scale-105"
+                className="inline-block text-xs text-white font-semibold py-2 w-1/3 px-3 bg-gradient-to-r from-cyan-600 to-fuchsia-600 rounded transition-all hover:scale-105"
                 onClick={() => setIsOpen(false)}
               >
                 [ REGISTER ]
