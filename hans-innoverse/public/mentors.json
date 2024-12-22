@@ -1,11 +1,28 @@
 [
   {
-    "name": "Mayank Yadav",
-    "title": "Head of Development",
-    "image": "/Mentors/mayank.jpg",
-    "linkedin": "https://www.linkedin.com/in/mayank-yadav-9ab5531b8",
+    "name": "Rahul Sharma",
+    "title": "Technical Head",
+    "image": "/Mentors/rahul.jpg",
+    "linkedin": "https://www.linkedin.com/in/rahul-sharma-b96866280",
+    "instagram": "Sharma15705rahul@gmail.com",
+    "email": "mailto:ds4754369@gmail.com"
+  },
+  {
+    "name": "Kirti Rathi",
+    "title": "Website Head",
+    "image": "/Mentors/kirti.jpg",
+    "linkedin": "https://www.linkedin.com/in/kirti-rathi/",
     "instagram": "",
-    "email": "mailto:mayankrao576@gmail.com"
+    "email": "mailto:kirtirathi282@gmail.com"
+  },
+
+  {
+    "name": "Parth Ratra",
+    "title": "Head of Development",
+    "image": "/Mentors/parth.jpg",
+    "linkedin": "https://www.linkedin.com/in/parthratra11",
+    "instagram": "",
+    "email": "mailto:"
   },
   {
     "name": "Pranay Rajvanshi",
@@ -16,27 +33,11 @@
     "email": "mailto:pranayforeverything@gmail.com"
   },
   {
-    "name": "Parth Ratra",
+    "name": "Mayank Yadav",
     "title": "Head of Development",
-    "image": "/Mentors/parth.jpg",
-    "linkedin": "https://www.linkedin.com/in/parthratra11",
+    "image": "/Mentors/mayank.jpg",
+    "linkedin": "https://www.linkedin.com/in/mayank-yadav-9ab5531b8",
     "instagram": "",
-    "email": "mailto:"
-  },
-  {
-    "name": "Kirti Rathi",
-    "title": "Website Head",
-    "image": "/Mentors/kirti.jpg",
-    "linkedin": "https://www.linkedin.com/in/kirti-rathi/",
-    "instagram": "",
-    "email": "mailto:kirtirathi282@gmail.com"
-  },
-  {
-    "name": "Deepak Sharma",
-    "title": "Website Head",
-    "image": "/Mentors/deepak.jpg",
-    "linkedin": "https://www.linkedin.com/in/deepak-sharma-645252257/",
-    "instagram": "",
-    "email": "mailto:ds4754369@gmail.com"
+    "email": "mailto:mayankrao576@gmail.com"
   }
 ]

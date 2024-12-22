@@ -4,9 +4,11 @@
 import { useEffect } from "react";
 import styles from "./tracks.module.css";
 
+// @ts-ignore
 export default function Tracks() {
   useEffect(() => {
     class ParallaxTiltEffect {
+      // @ts-ignore
       constructor({ element, tiltEffect }) {
         this.element = element;
         this.container = element.querySelector(".container");

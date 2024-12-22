@@ -1,13 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-import {
-  RiDiscordLine,
-  RiInstagramLine,
-  RiLinkedinLine,
-  RiMailAiLine,
-  RiMailFill,
-  RiMailLine,
-} from "react-icons/ri";
+import { RiInstagramLine, RiMailLine } from "react-icons/ri";
 
 const Footer: React.FC = () => {
   return (

@@ -55,12 +55,14 @@ export default function PixelCanvas({
     };
   }, [colors, normalizedGap, normalizedSpeed]);
 
+  // @ts-ignore
   const getDistanceToCanvasCenter = (x, y, width, height) => {
     const dx = x - width / 2;
     const dy = y - height / 2;
     return Math.sqrt(dx * dx + dy * dy);
   };
 
+  // @ts-ignore
   const createPixels = (canvas, context, width, height, reducedMotion) => {
     pixelsRef.current = [];
     for (let x = 0; x < width; x += normalizedGap) {
@@ -69,6 +71,7 @@ export default function PixelCanvas({
         const delay = reducedMotion
           ? 0
           : getDistanceToCanvasCenter(x, y, width, height);
+
         pixelsRef.current.push(
           new Pixel(canvas, context, x, y, color, normalizedSpeed, delay)
         );
@@ -76,6 +79,7 @@ export default function PixelCanvas({
     }
   };
 
+  // @ts-ignore
   const animate = (fnName) => {
     if (!contextRef.current || !canvasRef.current) return;
 
@@ -91,6 +95,7 @@ export default function PixelCanvas({
     }
   };
 
+  // @ts-ignore
   const handleAnimation = (name) => {
     if (animationRef.current) {
       cancelAnimationFrame(animationRef.current);

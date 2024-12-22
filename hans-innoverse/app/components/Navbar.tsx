@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./LinkEffect.module.css";
 import { useState } from "react";
@@ -15,7 +14,7 @@ const Navbar = () => {
         <div className="max-w-8xl mx-auto pl-3 sm:pl-3 lg:pl-3">
           <div className="flex justify-between h-[5rem] items-center">
             {/* Logo Section */}
-            <div className="items-center grid grid-cols-[2fr_1.27fr_1fr_3fr] mr-20 md:mr-0">
+            <div className="items-center grid grid-cols-[2fr_1.26fr_1fr_3fr] mr-20 md:mr-0">
               <img
                 src="/hrc.png"
                 alt="Hansraj Logo"
@@ -74,7 +73,7 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className={styles["link-effect"]}>
-                <Link href="#schedule">
+                <Link href="#timeline">
                   <span data-hover="Schedule">Schedule</span>
                 </Link>
               </div>

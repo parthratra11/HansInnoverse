@@ -29,6 +29,7 @@ const useIntersectionObserver = (options = {}) => {
   return [elementRef, isIntersecting];
 };
 
+// @ts-ignore
 const PrizeCard = ({ children, order, delay }) => {
   const [ref, isVisible] = useIntersectionObserver({
     threshold: 0.2,
@@ -37,7 +38,7 @@ const PrizeCard = ({ children, order, delay }) => {
 
   return (
     <div
-      ref={ref}
+      ref={ref as any}
       className={`transition-all duration-700 ${order} ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
@@ -74,7 +75,7 @@ const PrizesComponent = () => {
       <div className="absolute inset-0 bg-scrolling-pattern animate-bg-scroll"></div>
 
       <div
-        ref={headerRef}
+        ref={headerRef as any}
         className={`text-gray-200 text-center relative z-10 font-extrabold font-mont mb-4 text-6xl px-4 transition-all duration-700 ${
           isHeaderVisible
             ? "opacity-100 translate-y-0"
@@ -85,7 +86,7 @@ const PrizesComponent = () => {
       </div>
 
       <div
-        ref={subtitleRef}
+        ref={subtitleRef as any}
         className={`text-gray-400 relative z-10 font-semibold font-mono text-base mt-2 px-4 text-center transition-all duration-700 ${
           isSubtitleVisible
             ? "opacity-100 translate-y-0"
@@ -156,7 +157,7 @@ const PrizesComponent = () => {
       </div>
 
       <div
-        ref={swagRef}
+        ref={swagRef as any}
         className={`text-gray-200 text-center relative z-10 font-semibold text-3xl italic mt-6 px-4 transition-all duration-700 ${
           isSwagVisible
             ? "opacity-100 translate-y-0"

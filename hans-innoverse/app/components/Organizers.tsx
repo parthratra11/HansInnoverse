@@ -28,6 +28,7 @@ const useIntersectionObserver = (options = {}) => {
   return [elementRef, isIntersecting];
 };
 
+// @ts-ignore
 const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
   const [ref, isVisible] = useIntersectionObserver({
     threshold: 0.2,
@@ -36,7 +37,7 @@ const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
 
   return (
     <div
-      ref={ref}
+      ref={ref as any}
       className={`relative flex justify-evenly rounded-lg items-end overflow-hidden w-full text-center text-gray-100 bg-gray-100 shadow-[0_1px_1px_rgba(0,0,0,0.1),0_2px_2px_rgba(0,0,0,0.1),0_4px_4px_rgba(0,0,0,0.1),0_8px_8px_rgba(0,0,0,0.1),0_16px_16px_rgba(0,0,0,0.1)] group transition-all duration-700 min-h-96 sm:min-h-60 md:h-[300px] ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}
@@ -93,7 +94,7 @@ const OrganizersComponent = () => {
   return (
     <>
       <div
-        ref={headerRef}
+        ref={headerRef as any}
         className={`text-gray-200 text-center flex flex-col justify-center items-center relative z-10 font-extrabold font-mont text-5xl mb-6 mt-8 md:mt-6 transition-all duration-700 px-4 ${
           isHeaderVisible
             ? "opacity-100 translate-y-0"
@@ -109,7 +110,7 @@ const OrganizersComponent = () => {
 
       <div className="grid gap-4 p-4 mx-auto lg:px-32 font-sans md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card, index) => (
-          <Card key={index} {...card} delay={index * 100} />
+          <Card key={index} {...(card as any)} delay={index * 100} />
         ))}
       </div>
     </>

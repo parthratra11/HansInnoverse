@@ -28,6 +28,7 @@ const useIntersectionObserver = (options = {}) => {
   return [elementRef, isIntersecting];
 };
 
+// @ts-ignore
 const Card = ({ image, title, content, delay = 0 }) => {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -36,6 +37,7 @@ const Card = ({ image, title, content, delay = 0 }) => {
     rootMargin: "50px",
   });
 
+  // @ts-ignore
   const handleMouseMove = useCallback((e) => {
     const card = e.currentTarget;
     const box = card.getBoundingClientRect();
@@ -73,7 +75,7 @@ const Card = ({ image, title, content, delay = 0 }) => {
 
   return (
     <div
-      ref={ref}
+      ref={ref as any}
       className={`relative w-full px-6 md:p-3 sm:w-[400px] h-[180px] md:h-[240px] mx-2 cursor-pointer group transition-all duration-500 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}
@@ -121,6 +123,7 @@ const ThemesComponent = () => {
       .catch((error) => console.error("Error fetching JSON:", error));
   }, []);
 
+  // @ts-ignore
   useEffect(() => {
     const link = document.createElement("link");
     link.href =
@@ -136,7 +139,7 @@ const ThemesComponent = () => {
 
       <div className="container mx-auto px-4">
         <div
-          ref={headerRef}
+          ref={headerRef as any}
           className={`text-gray-200 text-center relative z-20 transition-all duration-700 ${
             isHeaderVisible
               ? "opacity-100 translate-y-0"
@@ -174,7 +177,7 @@ const ThemesComponent = () => {
         <div className="mt-16 mb-12">
           <div className="grid grid-cols-1 md:px-4 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
             {cards.map((card, index) => (
-              <Card key={index} {...card} delay={index * 100} />
+              <Card key={index} {...(card as any)} delay={index * 100} />
             ))}
           </div>
         </div>
