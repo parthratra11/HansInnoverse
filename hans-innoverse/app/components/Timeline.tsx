@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import { FaRegCircle } from "react-icons/fa6";
+import "./timeline.css";
 
 const TimelineComponent = () => {
   useEffect(() => {
