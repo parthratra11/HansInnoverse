@@ -269,7 +269,7 @@ export default function Hero() {
       </section>
 
       {/* Countdown Section */}
-      <section className="py-8 sm:py-12 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 text-center z-30">
+      <section className="py-8 sm:py-12 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 text-center relative md:mx-60 z-30">
         <h2 className="text-2xl font-bold text-gray-200 mb-4 font-mono z-30">
           SYSTEM LAUNCH IN
         </h2>
