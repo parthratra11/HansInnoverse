@@ -158,7 +158,7 @@ const PrizesComponent = () => {
 
       <div
         ref={swagRef as any}
-        className={`text-gray-200 text-center relative z-10 font-semibold text-3xl italic mt-6 px-4 transition-all duration-700 ${
+        className={`text-gray-200 text-center relative z-10 font-semibold text-2xl md:text-3xl italic mt-6 px-4 transition-all duration-700 ${
           isSwagVisible
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-5"

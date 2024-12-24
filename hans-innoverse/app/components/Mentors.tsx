@@ -92,7 +92,7 @@ const MentorsComponent = () => {
     <>
       <div
         ref={headerRef as any}
-        className={`text-gray-200 text-center flex flex-col justify-center items-center relative z-10 font-extrabold font-mont text-4xl md:text-5xl mb-6 transition-all duration-700 px-4  ${
+        className={`text-gray-200 text-center flex flex-col justify-center items-center relative z-10 font-extrabold font-mont text-5xl mb-6 transition-all duration-700 px-4  ${
           isHeaderVisible
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-5"
