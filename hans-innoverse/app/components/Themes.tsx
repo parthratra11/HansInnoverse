@@ -182,7 +182,7 @@ const ThemesComponent = () => {
           </div>
         </div>
 
-        <div className="italic text-center relative z-20 font-semibold font-mono text-yellow-500 text-xl sm:text-2xl">
+        <div className="italic text-center relative z-20 font-semibold font-mono text-yellow-500 text-lg sm:text-2xl">
           Final Round Twist: To be revealed during the event!
         </div>
       </div>
