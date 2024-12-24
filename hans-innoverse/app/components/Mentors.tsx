@@ -29,7 +29,7 @@ const useIntersectionObserver = (options = {}) => {
 };
 
 // @ts-ignore
-const Card = ({ name, title, image, linkedin, instagram, email, delay }) => {
+const Card = ({ name, title, image, linkedin, email, delay }) => {
   const [ref, isVisible] = useIntersectionObserver({
     threshold: 0.2,
     rootMargin: "50px",

@@ -238,7 +238,7 @@ export default function Hero() {
   return (
     <div className="relative min-h-[calc(100vh-5rem)] flex flex-col mt-20 sm:mt-0">
       {/* Hero Section */}
-      <section className="flex-1 py-8 sm:py-12 flex flex-col items-center justify-center text-center px-4 sm:px-8 relative">
+      <section className="flex-1 pt-28 md:pt-12 flex flex-col items-center justify-center text-center px-4 sm:px-8 relative">
         <div className="w-full max-w-4xl mx-auto">
           <h2
             className="text-5xl md:text-6xl xl:text-7xl mb-4 sm:mb-6 font-bold relative z-10 text-white/90 text-center glitch break-words"
@@ -250,7 +250,7 @@ export default function Hero() {
 
         <TypewriterText />
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 z-30 mt-4 sm:mt-6 w-full max-w-xl mx-auto">
+        <div className="flex flex-col mb-2 sm:flex-row gap-3 sm:gap-4 z-30 mt-4 sm:mt-6 w-full max-w-xl mx-auto">
           <Link
             href="https://unstop.com"
             target="_blank"
@@ -266,27 +266,26 @@ export default function Hero() {
             [ SYSTEM INFO ]
           </Link>
         </div>
-      </section>
-
-      {/* Countdown Section */}
-      <section className="py-8 sm:py-12 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 text-center relative md:mx-60 z-30">
-        <h2 className="text-2xl font-bold text-gray-200 mb-4 font-mono z-30">
-          SYSTEM LAUNCH IN
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 md:gap-6 z-50 w-full max-w-2xl mx-auto">
-          {Object.entries(timeLeft).map(([unit, value]) => (
-            <div
-              key={unit}
-              className="bg-black/60 rounded border border-cyan-500/30 p-2 sm:p-3 shadow-lg shadow-cyan-500/20 z-50"
-            >
-              <div className="text-2xl lg:text-3xl font-bold text-cyan-400 font-mono">
-                {value}
+        {/* Countdown Section */}
+        <div className="py-8 mt-24 sm:mt-16 flex flex-col items-center justify-center px-0 sm:px-6 md:px-8 text-center relative z-30">
+          <h2 className="text-2xl font-bold text-gray-200 mb-4 font-mono z-30">
+            SYSTEM LAUNCH IN
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 md:gap-6 z-50 w-full max-w-3xl">
+            {Object.entries(timeLeft).map(([unit, value]) => (
+              <div
+                key={unit}
+                className="bg-black/60 rounded border border-cyan-500/30 p-2 sm:p-3 shadow-lg shadow-cyan-500/20 z-50 text-center"
+              >
+                <div className="text-2xl lg:text-3xl font-bold text-cyan-400 font-mono px-12">
+                  {value}
+                </div>
+                <div className="text-sm text-cyan-300 uppercase font-mono">
+                  {unit}
+                </div>
               </div>
-              <div className="text-sm text-cyan-300 uppercase font-mono">
-                {unit}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </div>
