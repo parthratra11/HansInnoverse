@@ -76,7 +76,7 @@ const PrizesComponent = () => {
 
       <div
         ref={headerRef as any}
-        className={`text-gray-200 text-center relative z-10 font-extrabold font-mont mb-4 text-6xl px-4 transition-all duration-700 ${
+        className={`text-gray-200 text-center relative z-10 font-extrabold font-mont mb-4 text-5xl md:text-6xl px-4 transition-all duration-700 ${
           isHeaderVisible
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-5"

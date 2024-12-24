@@ -54,7 +54,7 @@ const TimelineComponent = () => {
       className="min-h-screen py-12 sm:py-10 relative z-50 bg-custom-image bg-cover"
       id="timeline"
     >
-      <h1 className="text-center text-gray-200 font-extrabold font-mont text-6xl mb-8">
+      <h1 className="text-center text-gray-200 font-extrabold font-mont text-5xl md:text-6xl mb-8">
         Timeline
       </h1>
 

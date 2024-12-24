@@ -92,14 +92,14 @@ const MentorsComponent = () => {
     <>
       <div
         ref={headerRef as any}
-        className={`text-gray-200 text-center flex flex-col justify-center items-center relative z-10 font-extrabold font-mont text-5xl mb-6 transition-all duration-700 px-4  ${
+        className={`text-gray-200 text-center flex flex-col justify-center items-center relative z-10 font-extrabold font-mont text-4xl md:text-5xl mb-6 transition-all duration-700 px-4  ${
           isHeaderVisible
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-5"
         }`}
       >
         Mentors
-        <p className="text-gray-400 lg:w-2/3 font-mono text-base mt-4">
+        <p className="text-gray-400 lg:w-2/3 font-mono text-sm md:text-base mt-4">
           Meet our mentors: passionate and experienced individuals dedicated to
           supporting and inspiring you as you bring your innovative ideas to
           life!
