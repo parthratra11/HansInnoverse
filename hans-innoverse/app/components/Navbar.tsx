@@ -87,7 +87,7 @@ const Navbar = () => {
             {/* Register Button */}
             <div className="hidden md:flex items-center font-mono">
               <Link
-                href="https://unstop.com"
+                href="https://unstop.com/p/hansinnoverse-hackathon-hansraj-collegeuniversity-of-delhi-1318509"
                 target="_blank"
                 className="relative px-4 mx-2 py-4 text-white whitespace-nowrap font-semibold rounded hover:scale-105 transition-transform border border-cyan-400/50 shadow-lg shadow-cyan-500/20 group"
               >
@@ -142,7 +142,7 @@ const Navbar = () => {
                 Contact
               </Link>
               <Link
-                href="https://unstop.com"
+                href="https://unstop.com/p/hansinnoverse-hackathon-hansraj-collegeuniversity-of-delhi-1318509"
                 target="_blank"
                 className="inline-block text-xs text-white font-semibold py-2 w-1/3 px-3 bg-gradient-to-r from-cyan-600 to-fuchsia-600 rounded transition-all hover:scale-105"
                 onClick={() => setIsOpen(false)}

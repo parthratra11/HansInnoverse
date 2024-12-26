@@ -252,7 +252,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 z-30 mt-4 sm:mt-6 w-full max-w-xl mx-auto">
           <Link
-            href="https://unstop.com"
+            href="https://unstop.com/p/hansinnoverse-hackathon-hansraj-collegeuniversity-of-delhi-1318509"
             target="_blank"
             className={`px-4 sm:px-6 py-2 sm:py-3 mx-1 md:ml-4 bg-gradient-to-r font-mono text-base from-cyan-600 to-fuchsia-800 text-white font-bold rounded hover:scale-105 transition-transform border border-cyan-400/50 shadow-lg shadow-cyan-500/20 flex-1 text-center ${slideTextClass}`}
           >

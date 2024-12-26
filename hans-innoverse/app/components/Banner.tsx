@@ -13,7 +13,10 @@ const Banner: React.FC = () => {
       <button
         className={`px-8 py-4 text-white text-lg md:text-2xl font-bold bg-black/50 rounded border-2 border-cyan-500/50 shadow-xl shadow-cyan-500/20 relative z-10 font-mono flip-animate`}
       >
-        <Link href="https://unstop.com" target="_blank">
+        <Link
+          href="https://unstop.com/p/hansinnoverse-hackathon-hansraj-collegeuniversity-of-delhi-1318509"
+          target="_blank"
+        >
           <span data-hover="[ R E G I S T E R ]">[ R E G I S T E R ]</span>
         </Link>
       </button>
