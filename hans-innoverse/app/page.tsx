@@ -14,6 +14,20 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import { Timeline } from "@mui/lab";
 
+export const metadata = {
+  title: "HansInnoverse Hackathon",
+  description:
+    "Welcome to the HansInnoverse Hackathon, organized by Ordinateur. Join the HansInnoverse Hackathon at Hansraj College and showcase your talent in coding and innovation!",
+  keywords: [
+    "HansInnoverse Hackathon",
+    "hansinnoverse",
+    "HansInnoverse",
+    "Ordinateur",
+    "hackathon",
+    "Hansraj College",
+  ],
+};
+
 export default function Home() {
   return (
     <>
