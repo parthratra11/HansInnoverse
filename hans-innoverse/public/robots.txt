@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hans-innoverse.vercel.app/sitemap.xml
