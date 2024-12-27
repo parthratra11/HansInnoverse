@@ -128,7 +128,7 @@ const Navbar = () => {
                 Themes
               </Link>
               <Link
-                href="#schedule"
+                href="#timeline"
                 className="text-white hover:text-cyan-400 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
