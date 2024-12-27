@@ -65,6 +65,9 @@ export const metadata: Metadata = {
     canonical: "https://hans-innoverse.vercel.app",
   },
   category: "Technology",
+  verification: {
+    google: "vHrMFI-PhnG58jUw9FZmydaQiTqegYhTttO2543jxWs",
+  },
 };
 
 export default function RootLayout({
