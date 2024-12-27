@@ -3,7 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "HansInnoverse Hackathon - Innovation at Hansraj College",
+  title: "HansInnoverse Hackathon 2024",
   description:
     "Join the HansInnoverse Hackathon 2024, organized by Ordinateur, Hansraj College. Showcase your coding and innovation skills!",
   keywords: [
