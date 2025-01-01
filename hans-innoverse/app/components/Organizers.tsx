@@ -29,7 +29,7 @@ const useIntersectionObserver = (options = {}) => {
 };
 
 // @ts-ignore
-const Card = ({ name, title, image, linkedin, email, delay }) => {
+const Card = ({ name, title, image, linkedin, email, delay, tagline }) => {
   const [ref, isVisible] = useIntersectionObserver({
     threshold: 0.2,
     rootMargin: "50px",
@@ -57,7 +57,6 @@ const Card = ({ name, title, image, linkedin, email, delay }) => {
       <div className="relative bg-black bg-opacity-50 flex flex-col items-center w-full p-4 pt-3 translate-y-[calc(100%-3rem)] transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:translate-y-6 z-10">
         <h2 className="text-md font-semibold text-lg font-sans mb-2">{name}</h2>
         <p className="text-xs font-semibold text-gray-300 mb-2">{title}</p>
-
         <div className="text-xs flex flex-row gap-1 font-bold tracking-wider mb-4 uppercase text-white focus:outline-dashed focus:outline-yellow-400 focus:outline-offset-2 opacity-0 transform translate-y-4 transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:opacity-100 group-hover:translate-y-0">
           {linkedin && (
             <a href={linkedin} target="_blank" rel="noopener noreferrer">
@@ -109,7 +108,7 @@ const OrganizersComponent = () => {
         </p>
       </div>
 
-      <div className="grid gap-4 p-4 mx-auto lg:px-32 font-sans md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 p-4 mx-auto font-sans md:grid-cols-3 lg:grid-cols-5">
         {cards.map((card, index) => (
           <Card key={index} {...(card as any)} delay={index * 100} />
         ))}

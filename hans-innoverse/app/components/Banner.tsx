@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
           <span data-hover="[ R E G I S T E R ]">[ R E G I S T E R ]</span>
         </Link>
       </button>
-      <style jsx>{``}</style>
+      {/* TODO: Sponsor call - Interested in being a sponsor or partner? Message us now. */}
     </div>
   );
 };
