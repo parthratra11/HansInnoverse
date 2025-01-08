@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
       </footer>
       <div className="h-[5vh] border-t border-gray-700 bg-gray-900 text-white flex justify-center items-center px-4 text-center">
         <p className="text-sm flex sm:py-0 flex-col sm:flex-row">
-          <p className="mx-1">Copyright © 2024 हंसInnoverse | </p>
+          <p className="mx-1">Copyright © 2025 हंसInnoverse | </p>
           <p>
             Designed and Developed by{" "}
             <a
