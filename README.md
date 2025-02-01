@@ -20,7 +20,7 @@ Welcome to the official repository for **HansInnoverse Hackathon**, organized by
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out at kirtirathi@gmail.com
+If you have any questions or suggestions, feel free to reach out at parthratra11@gmail.com
 
 ---
 
