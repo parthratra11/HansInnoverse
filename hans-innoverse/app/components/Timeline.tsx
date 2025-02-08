@@ -28,23 +28,23 @@ const TimelineComponent = () => {
       content: "Registration Starts",
     },
     {
-      date: "7th February 2025",
+      date: "11th February 2025",
       content: "Registration Closes",
     },
     {
-      date: "10th February 2025",
+      date: "14th February 2025",
       content: "Shortlisted Teams Result",
     },
     {
-      date: "14th February 2025",
+      date: "19th February 2025",
       content: "Online Presentation Round",
     },
     {
-      date: "16th February 2025",
+      date: "21st Febraury 2025",
       content: "Online Round Results",
     },
     {
-      date: "21st February 2025",
+      date: "1st March 2025",
       content: "Offline 12hr Hackathon",
     },
   ];
