@@ -44,7 +44,7 @@ const TimelineComponent = () => {
       content: "Online Round Results",
     },
     {
-      date: "1st March 2025",
+      date: "3rd March 2025",
       content: "Offline 12hr Hackathon",
     },
   ];
