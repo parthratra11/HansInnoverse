@@ -54,7 +54,7 @@ export default function Hero() {
   }, []);
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date("2025-02-21T07:00:00");
+    const eventDate = new Date("2025-03-03T07:00:00");
     const difference = eventDate.getTime() - new Date().getTime();
 
     if (difference <= 0) {
